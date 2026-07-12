@@ -34,7 +34,7 @@ export default function AuthLayout({
       {/* Logo - top left */}
       <div className="absolute left-6 top-6 z-20">
         <Link href="/" className="transition-opacity hover:opacity-80">
-          <Image src="/logo.svg" alt="careerhelper" width={100} height={30} />
+          <Image src="/logo.svg" alt="CareerHelper" width={150} height={32} />
         </Link>
       </div>
 

@@ -13,7 +13,7 @@ export default function LoginPage() {
       <div className="mb-6">
         <Image
           src="/logo-icon.svg"
-          alt="careerhelper"
+          alt="CareerHelper"
           width={48}
           height={48}
           className="drop-shadow-sm"

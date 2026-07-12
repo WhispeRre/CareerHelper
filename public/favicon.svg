@@ -1,32 +1,13 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="32" height="32" viewBox="145 155 520 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CareerHelper logo mark" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="careerhelper-v" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#34D399"/>
-      <stop offset="100%" stop-color="#059669"/>
+    <linearGradient id="ch-mark" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D9488" />
+      <stop offset="55%" stop-color="#14B8A6" />
+      <stop offset="100%" stop-color="#34D399" />
     </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect x="2" y="2" width="28" height="28" rx="7" fill="url(#careerhelper-v)"/>
-
-  <!-- White JR monogram -->
-  <g stroke="white" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <!-- J top serif -->
-    <path d="M8 9H17"/>
-    <!-- Shared vertical -->
-    <path d="M15 9V21"/>
-    <!-- J hook -->
-    <path d="M15 21C15 23.5 13 25 11 25C9.5 25 8.5 24 8.5 23"/>
-    <!-- R bowl -->
-    <path d="M15 9H20.5C23.5 9 25 11 25 13.5C25 16 23.5 18 20.5 18H15"/>
-    <!-- R leg -->
-    <path d="M19.5 18L26 25"/>
+  <g transform="translate(54.004995 767.479731) scale(0.092457 -0.092457)" fill="url(#ch-mark)">
+    <path d="M5685 6114 c-110 -24 -254 -55 -320 -68 -166 -35 -650 -135 -705 -146 -283 -57 -432 -90 -449 -99 -27 -15 -41 -42 -41 -83 0 -30 20 -53 215 -243 119 -115 216 -215 215 -220 0 -15 -593 -605 -607 -605 -7 0 -45 21 -85 47 -92 59 -269 143 -373 177 -215 70 -486 94 -704 62 -696 -103 -1245 -648 -1347 -1337 -22 -155 -16 -402 16 -548 68 -321 221 -595 461 -826 218 -209 490 -350 794 -412 69 -14 137 -18 295 -18 178 0 219 3 308 23 385 86 725 300 942 593 134 181 133 229 -5 342 -147 120 -323 155 -484 95 -71 -27 -113 -53 -186 -117 -176 -154 -356 -224 -580 -224 -174 -1 -319 42 -461 135 -230 149 -365 367 -395 635 -46 417 229 813 643 925 108 29 326 31 428 4 105 -28 236 -99 345 -187 156 -127 236 -159 391 -159 115 0 180 13 264 53 58 27 108 73 460 424 218 216 400 393 405 393 5 0 111 -101 235 -225 222 -220 228 -225 268 -225 28 0 49 7 68 23 24 21 29 38 51 168 13 79 39 234 58 344 19 110 51 292 70 405 68 400 77 447 111 636 25 139 32 198 25 216 -11 28 -66 78 -86 78 -7 0 -19 2 -27 4 -7 2 -103 -16 -213 -40z" />
   </g>
-
-  <!-- AI sparkle glow -->
-  <circle cx="27" cy="6.5" r="4" fill="#FCD34D" opacity="0.15"/>
-  <!-- AI sparkle — main star -->
-  <path d="M27 3L27.8 5.5L30.5 6.5L27.8 7.5L27 10L26.2 7.5L23.5 6.5L26.2 5.5Z" fill="#FCD34D"/>
-  <!-- AI sparkle — small dot -->
-  <circle cx="23.5" cy="3.5" r="1" fill="#FCD34D" opacity="0.5"/>
 </svg>
