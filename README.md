@@ -1,6 +1,6 @@
 <div align="center">
 
-# careerhelper
+<img src="public/logo.svg" alt="CareerHelper" width="280" />
 
 **AI-Powered Smart Resume Builder**
 
