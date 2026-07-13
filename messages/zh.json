@@ -669,7 +669,8 @@
       "viewAll": "查看全部模板"
     },
     "stats": {
-      "title": "全球求职者的信赖之选",
+      "title": "适配主流AI API接口",
+      "subtitle": "兼容OpenAI、Anthropic、Gemini等主流模型API",
       "templates": {
         "value": "50+",
         "label": "精选模板"
@@ -688,8 +689,8 @@
       }
     },
     "cta": {
-      "title": "准备好打造你的最佳简历了吗？",
-      "subtitle": "已有数千名求职者通过 careerhelper 收获面试机会。无需注册，即刻开始。",
+      "title": "准备好展现更好的自己了吗？",
+      "subtitle": "无需注册，即刻开始。",
       "button": "立即创建简历"
     },
     "footer": {

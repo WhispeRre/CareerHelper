@@ -669,7 +669,8 @@
       "viewAll": "View All Templates"
     },
     "stats": {
-      "title": "Trusted by Job Seekers Worldwide",
+      "title": "Built for mainstream AI API interfaces",
+      "subtitle": "Compatible with OpenAI, Anthropic, Gemini, and other leading model APIs",
       "templates": {
         "value": "50+",
         "label": "Templates"
@@ -688,8 +689,8 @@
       }
     },
     "cta": {
-      "title": "Ready to Build Your Best Resume?",
-      "subtitle": "Join thousands of job seekers who have landed interviews with careerhelper. No sign-up required.",
+      "title": "Ready to Show a Better Version of Yourself?",
+      "subtitle": "No sign-up required. Start right away.",
       "button": "Create Your Resume Now"
     },
     "footer": {

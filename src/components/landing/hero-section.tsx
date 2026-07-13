@@ -6,33 +6,20 @@ import { Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { TemplateThumbnail } from '@/components/dashboard/template-thumbnail';
-import SoftAurora from './soft-aurora';
+import Iridescence from './iridescence';
 import FadeContent from './fade-content';
 
 export function HeroSection() {
   const t = useTranslations('landing.hero');
 
   return (
-    <section className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden px-4 pt-16 sm:px-6 lg:px-8">
+    <section className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden px-4 pt-24 sm:px-6 lg:px-8">
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <SoftAurora
-          speed={0.52}
-          scale={1.7}
-          brightness={0.95}
-          color1="#f7f7f7"
-          color2="#00d4a3"
-          noiseFrequency={2.4}
-          noiseAmplitude={0.95}
-          bandHeight={0.58}
-          bandSpread={0.9}
-          octaveDecay={0.12}
-          layerOffset={0.28}
-          colorSpeed={0.72}
-          mouseInfluence={0.14}
-        />
+        <Iridescence color={[0.72, 1, 0.9]} mouseReact={false} amplitude={0.08} speed={0.75} />
       </div>
-      <div className="pointer-events-none absolute inset-0 z-0 bg-white/80 dark:bg-zinc-950/70" />
-      <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,transparent_0%,transparent_52%,white_86%)] dark:bg-[radial-gradient(circle_at_center,transparent_0%,transparent_48%,rgb(9_9_11)_88%)]" />
+      <div className="pointer-events-none absolute inset-0 z-0 bg-white/72 dark:bg-zinc-950/68" />
+      <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,transparent_0%,transparent_54%,white_88%)] dark:bg-[radial-gradient(circle_at_center,transparent_0%,transparent_48%,rgb(9_9_11)_88%)]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-40 bg-gradient-to-b from-transparent via-white/70 to-white dark:via-zinc-950/70 dark:to-zinc-950" />
 
       <div className="relative z-10 mx-auto max-w-4xl text-center">
         <Badge
