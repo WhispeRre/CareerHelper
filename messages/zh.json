@@ -610,8 +610,8 @@
       "dashboard": "工作台"
     },
     "hero": {
-      "title": "用 AI 打造你的完美简历",
-      "subtitle": "几分钟内创建专业、ATS 友好的简历。AI 驱动，助你脱颖而出，拿下理想 Offer。",
+      "title": "从一段经历\n到一份完美简历",
+      "subtitle": "支持多种模板与 ATS 优化，几分钟完成\n一份更适合你期望岗位的简历",
       "cta": "免费开始制作",
       "secondaryCta": "浏览模板"
     },

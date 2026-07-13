@@ -9,4 +9,13 @@ describe('LandingHeader scroll states', () => {
     expect(source).toContain('border-transparent bg-transparent');
     expect(source).toContain('border-zinc-200 bg-white/80 backdrop-blur-lg');
   });
+
+  it('defers the Radix mobile sheet until after mount to avoid hydration id mismatches', () => {
+    const source = readFileSync('src/components/landing/landing-header.tsx', 'utf8');
+
+    expect(source).toContain('useSyncExternalStore');
+    expect(source).toContain('function MobileMenu(');
+    expect(source).toContain('if (!mounted)');
+    expect(source).toContain('<MobileMenuFallbackButton />');
+  });
 });

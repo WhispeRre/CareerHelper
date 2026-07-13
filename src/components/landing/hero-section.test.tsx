@@ -23,4 +23,31 @@ describe('HeroSection background', () => {
     expect(source).toContain('bg-gradient-to-b');
     expect(source).toContain('to-white');
   });
+
+  it('uses the stacked resume showcase instead of rendering template thumbnails inline', () => {
+    const source = readFileSync('src/components/landing/hero-section.tsx', 'utf8');
+
+    expect(source).toContain("import { HeroResumeShowcase } from './hero-resume-showcase'");
+    expect(source).toContain('<HeroResumeShowcase');
+    expect(source).not.toContain("import { TemplateThumbnail } from '@/components/dashboard/template-thumbnail'");
+  });
+
+  it('uses split text animation for the main hero title', () => {
+    const source = readFileSync('src/components/landing/hero-section.tsx', 'utf8');
+
+    expect(source).toContain("import SplitText from './split-text'");
+    expect(source).toContain('<SplitText');
+    expect(source).toContain("const titleLines = t('title').split('\\n')");
+    expect(source).toContain('titleLines.map');
+    expect(source).toContain('tag="span"');
+    expect(source).toContain('block');
+  });
+
+  it('uses split text animation for the hero subtitle too', () => {
+    const source = readFileSync('src/components/landing/hero-section.tsx', 'utf8');
+
+    expect(source).toContain("const subtitleLines = t('subtitle').split('\\n')");
+    expect(source).toContain('subtitleLines.map');
+    expect(source).toContain('tag="span"');
+  });
 });
