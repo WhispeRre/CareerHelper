@@ -1,32 +1,40 @@
+'use client';
+
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { TemplateThumbnail } from '@/components/dashboard/template-thumbnail';
+import SoftAurora from './soft-aurora';
 import SplitText from './split-text';
 
 export function HeroSection() {
   const t = useTranslations('landing.hero');
+  const [titleComplete, setTitleComplete] = useState(false);
 
   return (
     <section className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden px-4 pt-16 sm:px-6 lg:px-8">
-      {/* Background effects */}
-      <div
-        className="absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full opacity-20 blur-[100px] dark:opacity-10"
-        style={{ background: 'radial-gradient(circle, #ec4899, transparent 70%)' }}
-      />
-      <div
-        className="absolute -bottom-40 -left-40 h-[400px] w-[400px] rounded-full opacity-15 blur-[100px] dark:opacity-10"
-        style={{ background: 'radial-gradient(circle, #f472b6, transparent 70%)' }}
-      />
-      <div
-        className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
-        style={{
-          backgroundImage: 'radial-gradient(circle, #71717a 1px, transparent 1px)',
-          backgroundSize: '24px 24px',
-        }}
-      />
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <SoftAurora
+          speed={0.52}
+          scale={1.7}
+          brightness={0.95}
+          color1="#f7f7f7"
+          color2="#00d4a3"
+          noiseFrequency={2.4}
+          noiseAmplitude={0.95}
+          bandHeight={0.58}
+          bandSpread={0.9}
+          octaveDecay={0.12}
+          layerOffset={0.28}
+          colorSpeed={0.72}
+          mouseInfluence={0.14}
+        />
+      </div>
+      <div className="pointer-events-none absolute inset-0 z-0 bg-white/80 dark:bg-zinc-950/70" />
+      <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,transparent_0%,transparent_52%,white_86%)] dark:bg-[radial-gradient(circle_at_center,transparent_0%,transparent_48%,rgb(9_9_11)_88%)]" />
 
       <div className="relative z-10 mx-auto max-w-4xl text-center">
         <Badge
@@ -51,11 +59,28 @@ export function HeroSection() {
           threshold={0.1}
           rootMargin="-100px"
           textAlign="center"
+          onLetterAnimationComplete={() => setTitleComplete(true)}
         />
 
-        <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-zinc-600 sm:text-lg md:text-xl dark:text-zinc-400">
-          {t('subtitle')}
-        </p>
+        <div className="mx-auto mt-6 max-w-2xl">
+          {titleComplete && (
+            <SplitText
+              tag="p"
+              text={t('subtitle')}
+              className="text-base leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-lg md:text-xl"
+              style={{ display: 'block', width: '100%' }}
+              delay={18}
+              duration={0.58}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 24 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+              rootMargin="-100px"
+              textAlign="center"
+            />
+          )}
+        </div>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button

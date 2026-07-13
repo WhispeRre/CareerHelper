@@ -1,0 +1,17 @@
+.container {
+  height: 100%;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.container canvas {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .container {
+    opacity: 0.55;
+  }
+}
