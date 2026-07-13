@@ -4,6 +4,7 @@ import { Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { TemplateThumbnail } from '@/components/dashboard/template-thumbnail';
+import SplitText from './split-text';
 
 export function HeroSection() {
   const t = useTranslations('landing.hero');
@@ -36,11 +37,21 @@ export function HeroSection() {
           AI-Powered
         </Badge>
 
-        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-          <span className="bg-gradient-to-r from-zinc-900 via-zinc-700 to-brand bg-clip-text text-transparent dark:from-zinc-100 dark:via-zinc-300 dark:to-brand-hover">
-            {t('title')}
-          </span>
-        </h1>
+        <SplitText
+          tag="h1"
+          text={t('title')}
+          className="text-4xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 sm:text-5xl md:text-6xl lg:text-7xl"
+          style={{ display: 'block', width: '100%' }}
+          delay={42}
+          duration={0.72}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 44 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+        />
 
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-zinc-600 sm:text-lg md:text-xl dark:text-zinc-400">
           {t('subtitle')}

@@ -195,6 +195,15 @@
   animation-delay: 1s;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .split-char,
+  .split-word,
+  .split-line {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 .landing-cta-bg {
   background: linear-gradient(135deg, var(--brand), var(--brand-hover));
 }
