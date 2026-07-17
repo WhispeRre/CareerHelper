@@ -97,44 +97,6 @@ The following resume sections support Markdown syntax:
 - **Flexible Auth** — Google OAuth or browser fingerprint (zero-config)
 - **Dual Database** — SQLite (default, zero-config) or PostgreSQL
 
-## Screenshots
-
-| Template Gallery | Resume Editor |
-|:---:|:---:|
-| ![Template Gallery](images/template-list.png) | ![Resume Editor](images/resume-edit.png) |
-
-| AI Resume Generation | AI Resume Parsing (Image) |
-|:---:|:---:|
-| ![AI Resume Generation](images/AI%20填充简历.gif) | ![AI Resume Parsing](images/图片简历解析.gif) |
-
-| AI Optimization | Grammar Check |
-|:---:|:---:|
-| ![AI Optimization](images/ai%20优化.png) | ![Grammar Check](images/AI%20语法检查.png) |
-
-| Grammar Auto-Fix | JD Match Analysis |
-|:---:|:---:|
-| ![Grammar Auto-Fix](images/AI%20语法检查一键修复.png) | ![JD Match Analysis](images/JD%20匹配分析.png) |
-
-| Multi-Format Export | Share Link |
-|:---:|:---:|
-| ![Multi-Format Export](images/多项导出.png) | ![Share Link](images/创建分享链接.png) |
-
-| Shared Resume Page | AI Professional Photo |
-|:---:|:---:|
-| ![Shared Resume Page](images/简历分享页.png) | ![AI Professional Photo](images/职业照生成.png) |
-
-| QR Code Section |
-|:---:|
-| ![QR Code Section](images/二维码.png) |
-
-| Interview Setup | Mock Interview |
-|:---:|:---:|
-| ![Interview Setup](images/新建面试.png) | ![Mock Interview](images/模拟面试.png) |
-
-| Interview List | Interview Report |
-|:---:|:---:|
-| ![Interview List](images/面试列表.png) | ![Interview Report](images/面试报告.png) |
-
 ## Tech Stack
 
 | Layer | Technology |
